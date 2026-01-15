@@ -1,0 +1,60 @@
+{   
+    
+    "model": "micp",
+
+    "micp": {
+        "locations": [3, 9, 15, 21, 27, 33, 39, 45],
+        "times": [1],
+        "prior_param_4_upper": 0.5e-3
+    },
+
+    "surrogate": "true_model",
+
+    "bayesian_apc": {
+        "polynomial_degree": 3,
+        "n_samples": 250,
+        "n_warmup": 1000,
+        "n_chains": 4,
+        "log3_n_training_points": 3,
+        "prop_sigma_approx": false,
+        "use_sparse_pce": false
+    },
+
+    "inference": "abi",
+    
+    "abi":
+    {
+        "n_obs": [9, 9],
+        "n_batches": 128,
+        "batch_size": 64,
+        "sumnet": "none",
+        "sumnet_depth": 2,
+        "sumnet_dim": 10,
+        "sumnet_dropout": 0.0,
+        "infnet": "spline_couplingflow",
+        "learning_rate_scheduler": "cosine",
+        "learning_rate": 5e-4,
+        "learning_rate_hp": 1e-6,
+        "optimizer": "adam",
+        "epochs": 100,
+        "low_budget": true
+    },
+
+    "mcmc":
+    {
+        "n_warmup": 1000,
+        "n_chains": 4
+    },
+
+    "out":
+    {   
+        "n_plot_inputs": 100,
+        "n_plot_params": 100,
+        "n_obs": 9,
+        "n_datasets": 200,
+        "n_param_samples": 4000,
+        "n_plot_param_samples": 2,
+        "use_true_model": true
+    }
+  }
+  

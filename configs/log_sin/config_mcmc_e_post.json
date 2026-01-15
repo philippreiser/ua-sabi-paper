@@ -1,0 +1,66 @@
+{   
+    
+    "model": "log_sin",
+
+    "logistic":{
+        "w_range": [-1, 1]
+    },
+    
+    "log_sin": {
+        "w_range": [0.6, 1.4],
+        "x_range": [1, 200],
+        "sigmaI": 0.3
+    },
+
+    "ishigami": {
+        "a_range": [6, 8],
+        "b_range": [0, 0.2]
+      },
+
+    "surrogate": "bayesian_pce",
+
+    "bayesian_pce": {
+        "polynomial_degree": 3,
+        "n_samples": 250,
+        "n_warmup": 1000,
+        "n_chains": 4,
+        "log2_n_training_points": 4,
+        "prop_sigma_approx": true
+    },
+
+    "inference": "mcmc",
+    
+    "abi":
+    {
+        "n_obs": [4,4],
+        "n_batches": 128,
+        "batch_size": 64,
+        "sumnet_depth": 2,
+        "sumnet_dim": 10,
+        "infnet": "couplingflow",
+        "learning_rate_scheduler": "cosine",
+        "learning_rate": 5e-4,
+        "learning_rate_hp": 1e-6,
+        "optimizer": "adam",
+        "epochs": 100,
+        "low_budget": false
+    },
+
+    "mcmc":
+    {
+        "n_warmup": 1000,
+        "n_chains": 4
+    },
+
+    "out":
+    {   
+        "n_plot_inputs": 100,
+        "n_plot_params": 100,
+        "n_obs": 4,
+        "n_datasets": 200,
+        "n_param_samples": 4000,
+        "n_plot_param_samples": 2,
+        "use_true_model": true
+    }
+  }
+  
