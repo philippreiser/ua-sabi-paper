@@ -1,5 +1,6 @@
 # Uncertainty-Aware Surrogate-Based Amortized Bayesian Inference (UA-SABI)
-Supplementary code.
+Supplementary code to replicate key experiments from our
+[paper](https://openreview.net/forum?id=aVSoQXbfy1).
 
 ## Installation
 Create a new environment with Python 3.11. Install the required dependencies by running:
@@ -19,9 +20,9 @@ python main.py --config <path-to-config>
 ```
 The configuration files are provided in the `configs/` directory.
 
-### CO₂ Case Study
+### CO₂ Data
 
-To reproduce the CO₂ case study, download the dataset from:
+To reproduce the CO₂ case study, download the corresponding dataset from:
 
 **Köppel et al. (2017)**  
 *Datasets and executables of data-driven uncertainty quantification benchmark in carbon dioxide storage*  
@@ -30,6 +31,8 @@ To reproduce the CO₂ case study, download the dataset from:
 DOI: [10.5281/zenodo.933827](https://doi.org/10.5281/zenodo.933827)
 
 ### MICP Data
+
+To reproduce the MICP case study, download the corresponding dataset from:
 
 **Hommel et al. (2015)**  
 
