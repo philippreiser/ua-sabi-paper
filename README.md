@@ -40,3 +40,18 @@ To reproduce the MICP case study, download the corresponding dataset from:
 *A Revised Model for Microbially Induced Calcite Precipitation: Improvements and New Insights Based on Recent Experiments*  
 
 DOI: [10.1002/2014WR016503](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2014WR016503)
+
+## Citation
+
+``` bibtex
+@article{
+    scheurer2026uncertaintyaware,
+    title={Uncertainty-Aware Surrogate-based Amortized Bayesian Inference for Computationally Expensive Models},
+    author={Stefania Scheurer and Philipp Reiser and Tim Br{\"u}nnette and Wolfgang Nowak and Anneli Guthke and Paul-Christian B{\"u}rkner},
+    journal={Transactions on Machine Learning Research},
+    issn={2835-8856},
+    year={2026},
+    url={https://openreview.net/forum?id=aVSoQXbfy1},
+    note={}
+}
+```
